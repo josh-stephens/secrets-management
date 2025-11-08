@@ -1,0 +1,31 @@
+# Plaintext secrets (never commit)
+.env
+*.key
+*.pem
+credentials.env
+
+# Session summaries (local work artifacts)
+SESSION-*.md
+
+# Archive directory (historical Infisical files, some owned by root)
+archive/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test/example output
+test-output/
