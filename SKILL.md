@@ -97,13 +97,15 @@ token = subprocess.check_output(['secrets', 'PLEX_TOKEN']).decode().strip()
 
 See **examples.md** for integration patterns (Python, Node.js, systemd, CI/CD).
 
-## Current Secrets
+## Example Secrets
 
-From template:
-- **Plex:** PLEX_TOKEN, PLEX_URL_YGGDRASILL, PLEX_URL_SKIPPY
+Common secret types (customize for your needs):
+- **Plex:** PLEX_TOKEN, PLEX_URL_PRIMARY, PLEX_URL_SECONDARY
 - **Trakt:** TRAKT_CLIENT_ID, TRAKT_CLIENT_SECRET, TRAKT_USERNAME
-- **Infrastructure:** DOMAIN_NAME (711bf.org), NFS_SERVER, SSL_EMAIL, GENERIC_TIMEZONE
+- **Infrastructure:** DOMAIN_NAME, NFS_SERVER, SSL_EMAIL, GENERIC_TIMEZONE
 - **SSH:** SSH_KEY_FINGERPRINT, SSH_KEY_CREATED
+- **Cloud:** AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, DIGITALOCEAN_TOKEN
+- **APIs:** GITHUB_TOKEN, OPENAI_API_KEY, STRIPE_SECRET_KEY
 
 ## Best Practices
 

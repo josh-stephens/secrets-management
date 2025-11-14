@@ -488,8 +488,8 @@ From the template (`credentials.env.template`):
 **Plex Configuration:**
 - `PLEX_CLAIM_TOKEN` - Plex claim token for server setup
 - `PLEX_TOKEN` - Plex API authentication token
-- `PLEX_URL_YGGDRASILL` - http://100.122.220.42:32999 (primary)
-- `PLEX_URL_SKIPPY` - http://100.85.160.91:32400 (secondary)
+- `PLEX_URL_PRIMARY` - http://192.0.2.10:32400 (primary server)
+- `PLEX_URL_SECONDARY` - http://192.0.2.20:32400 (secondary server)
 
 **Trakt API:**
 - `TRAKT_CLIENT_ID` - Trakt API application client ID
@@ -497,10 +497,10 @@ From the template (`credentials.env.template`):
 - `TRAKT_USERNAME` - Trakt account username
 
 **Infrastructure:**
-- `DOMAIN_NAME` - 711bf.org (main domain)
-- `SSL_EMAIL` - myn.donos@gmail.com (Let's Encrypt notifications)
+- `DOMAIN_NAME` - example.com (main domain)
+- `SSL_EMAIL` - admin@example.com (Let's Encrypt notifications)
 - `GENERIC_TIMEZONE` - America/Los_Angeles
-- `NFS_SERVER` - 100.122.220.42 (yggdrasill NAS IP)
+- `NFS_SERVER` - 192.0.2.10 (NAS server IP)
 
 **SSH Tracking:**
 - `SSH_KEY_FINGERPRINT` - Current SSH key fingerprint for tracking
